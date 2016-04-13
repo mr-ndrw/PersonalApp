@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    h1= title
+
+    h2 Add User
+    #addUser
+        fieldset
+            input#inputUserName(type='text', placeholder='Name')
+            input#inputUserSurname(type='text', placeholder='Surname')
+            br
+            button#btnAddUser Add User
+
+    h3#helloUser
+
+    h2 User List
+    #userList
+        table
+            thead
+                th Name
+                th Surname
+            tbody
